@@ -457,7 +457,7 @@
 
         document.getElementById('submitBtn').addEventListener('click', function() {
             const income = document.getElementById('annualIncome').value.trim();
-            if (!income || income < 10000) {
+            if (!income || income < 1000) {
                 alert('Please enter a valid annual income (minimum K 10,000).');
                 return;
             }
