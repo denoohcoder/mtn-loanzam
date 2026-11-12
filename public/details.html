@@ -341,13 +341,9 @@
                 document.getElementById('email').classList.add('invalid');
                 valid = false;
             }
-            if (!phone || phone.length !== 9 || !/^9\d{8}$/.test(phone)) {
-                document.getElementById('phoneGroup').classList.add('invalid');
-                valid = false;
-            }
 
             if (!valid) {
-                alert('Please fill in all fields correctly.\n• Email must be a valid address\n• Phone must be 9 digits starting with 9 (e.g. 961234567)');
+                alert('Please fill in all fields correctly.\n• Email must be a valid address\n• Phone must be 9 digits (e.g. 961234567)');
                 return;
             }
 
